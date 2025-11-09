@@ -1,16 +1,112 @@
-# React + Vite
+# 💻 EZ Labs Front-End Intern Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive **React.js single-page web app** built as part of the **EZ Labs Front-End Internship test**.  
+This project recreates the **given Figma design** and includes a **Contact Form** integrated with a real API endpoint for form submission.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+✅ **Recreated Home Page** from Figma design  
+📱 **Fully Responsive Layout** for mobile, tablet, and desktop  
+🧾 **Contact Form Integration** with live API connection  
+🧩 **Form Validations**
+- No empty fields allowed  
+- Valid email format required  
+💬 **Success Message** on successful API response (status 200)  
+⚡ **Smooth performance** with Vite + Bootstrap  
+🎨 **Clean and Minimal UI Design**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ **React.js (Vite)**
+- 🎨 **Bootstrap 5**
+- 🧩 **CSS3**
+- 🔗 **Fetch / Axios API Integration**
+- 🧪 **Postman** (for API testing)
+
+---
+
+## 📁 Project Structure
+EZ_test/
+├── public/
+│ └── index.html
+├── src/
+│ ├── components/
+│ │ ├── Navbar.jsx
+│ │ ├── HeroSection.jsx
+│ │ ├── Services.jsx
+│ │ └── ContactForm.jsx
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── index.css
+├── postman_dump.json
+├── README.md
+├── package.json
+├── vite.config.js
+└── .gitignore
+
+
+---
+
+## 🧪 API Information
+
+**Endpoint:**  
+https://vernanbackend.ezlab.in/api/contact-us/
+
+**Method:**  
+`POST`
+
+**Request Body Example:**
+```json
+{
+  "name": "Mansi Sharma",
+  "email": "mansi@gmail.com",
+  "phone": "9876543210",
+  "message": "This is a test message"
+}
+Expected Response:
+
+json
+Copy code
+{
+  "message": "Contact request submitted successfully, but email notification failed",
+  "data": {
+    "id": 4908,
+    "name": "Mansi Sharma",
+    "email": "mansi@gmail.com",
+    "phone": "9876543210",
+    "message": "This is a test message",
+    "created_at": "2025-11-09T14:41:58.666737Z",
+    "updated_at": "2025-11-09T14:41:58.666754Z"
+  }
+}
+✅ The above response confirms that the API integration is working successfully.
+
+🧾 Postman Dump
+📄 The file postman_dump.json is included in this repository.
+It contains the exported Postman collection used to test the live API endpoint.
+
+⚙️ How to Run Locally
+# 1️⃣ Clone the repository
+git clone https://github.com/mansisharma1221/EZ_test.git
+
+# 2️⃣ Navigate into the folder
+cd EZ_test
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Start the development server
+npm run dev
+
+👩‍💻 Author
+
+Mansi Sharma
+🎯 Front-End Developer | Creative Coder | UI Enthusiast
+🔗 GitHub Profile
+
+“Good design is not just what it looks like — it’s how it works.”
+— Built with ❤️ using React.js and Bootstrap
