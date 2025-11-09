@@ -88,7 +88,7 @@ Copy code
 🧾 Postman Dump
 📄 The file postman_dump.json is included in this repository.
 It contains the exported Postman collection used to test the live API endpoint.
-
+---
 ⚙️ How to Run Locally
 # 1️⃣ Clone the repository
 git clone https://github.com/mansisharma1221/EZ_test.git
@@ -101,7 +101,7 @@ npm install
 
 # 4️⃣ Start the development server
 npm run dev
-
+---
 👩‍💻 Author
 
 Mansi Sharma
