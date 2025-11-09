@@ -67,7 +67,9 @@ EZ_test/
   "phone": "9876543210",
   "message": "This is a test message"
 }
-✅ Expected Response
+```
+### ✅ Expected Response
+```
 {
   "message": "Contact request submitted successfully, but email notification failed",
   "data": {
@@ -80,6 +82,8 @@ EZ_test/
     "updated_at": "2025-11-09T14:41:58.666754Z"
   }
 }
+```
+
 ✅ The above response confirms that the API integration is working successfully.
 
 🧾 Postman Dump
@@ -87,10 +91,8 @@ EZ_test/
 📄 The file postman_dump.json is included in this repository.
 It contains the exported Postman collection used to test the API endpoint and verify response codes.
 
-
----
-
-## ⚙️ How to Run Locally
+###⚙️ How to Run Locally
+```
 # 1️⃣ Clone the repository
 git clone https://github.com/mansisharma1221/EZ_test.git
 
@@ -103,10 +105,9 @@ npm install
 # 4️⃣ Start the development server
 npm run dev
 
+```
 Then open http://localhost:5173
  in your browser 🚀
-
----
 
 ## 👩‍💻 Author
 
