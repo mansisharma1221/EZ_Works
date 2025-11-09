@@ -54,12 +54,12 @@ EZ_test/
 ## 🧪 API Information
 
 **Endpoint:**  
-https://vernanbackend.ezlab.in/api/contact-us/
+`https://vernanbackend.ezlab.in/api/contact-us/`
 
 **Method:**  
 `POST`
 
-**Request Body Example:**
+### 📨 Request Body Example
 ```json
 {
   "name": "Mansi Sharma",
@@ -67,10 +67,7 @@ https://vernanbackend.ezlab.in/api/contact-us/
   "phone": "9876543210",
   "message": "This is a test message"
 }
-Expected Response:
-
-json
-Copy code
+✅ Expected Response
 {
   "message": "Contact request submitted successfully, but email notification failed",
   "data": {
@@ -86,10 +83,14 @@ Copy code
 ✅ The above response confirms that the API integration is working successfully.
 
 🧾 Postman Dump
+
 📄 The file postman_dump.json is included in this repository.
-It contains the exported Postman collection used to test the live API endpoint.
+It contains the exported Postman collection used to test the API endpoint and verify response codes.
+
+
 ---
-⚙️ How to Run Locally
+
+## ⚙️ How to Run Locally
 # 1️⃣ Clone the repository
 git clone https://github.com/mansisharma1221/EZ_test.git
 
@@ -101,8 +102,13 @@ npm install
 
 # 4️⃣ Start the development server
 npm run dev
+
+Then open http://localhost:5173
+ in your browser 🚀
+
 ---
-👩‍💻 Author
+
+## 👩‍💻 Author
 
 Mansi Sharma
 🎯 Front-End Developer | Creative Coder | UI Enthusiast
@@ -110,3 +116,5 @@ Mansi Sharma
 
 “Good design is not just what it looks like — it’s how it works.”
 — Built with ❤️ using React.js and Bootstrap
+
+
